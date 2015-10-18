@@ -1,0 +1,26 @@
+{
+  "name": "aleks_ku/unit_calc",
+  "description": "Test package for unitecsys",
+  "require": {
+    "php": ">=5.3.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4.8",
+    "fzaninotto/faker": "^1.6@dev"
+  },
+
+
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Aleksey Kuznetsov",
+      "email": "ak@newage.pw"
+    }
+  ],
+  "autoload": {
+    "classmap": [
+      "src/"
+    ]
+  },
+  "minimum-stability": "dev"
+}
