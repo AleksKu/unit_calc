@@ -24,6 +24,9 @@ for ($i=0; $i < 50; $i++) {
 
 $localities = array_unique($localities);
 
+/**
+ * генерируем коллекцию маршрутов
+ */
 for ($i=0; $i < 100; $i++) {
     $routes[] = [
         'from'=>$localities[array_rand($localities)],'to'=>$localities[array_rand($localities)],'cost'=>$faker->randomDigitNotNull
@@ -38,6 +41,6 @@ $calc->calc($localities[array_rand($localities)],$localities[array_rand($localit
 
 
 echo "маршрут:";
-var_dump($calc->printPath());
+echo $calc->printPath();
 
 echo "\n Стоимость проезда: ".$calc->getCost();

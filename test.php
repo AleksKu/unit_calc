@@ -25,7 +25,7 @@ $routes = [
 $calc = new TransportCalculator($routes);
 $calc->calc('Москва','Краснодар');
 
-echo "маршрут:";
-var_dump($calc->printPath());
+echo "маршрут: ";
+echo $calc->printPath();
 
 echo "\n Стоимость проезда: ".$calc->getCost();
